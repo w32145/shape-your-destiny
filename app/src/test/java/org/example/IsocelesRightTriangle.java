@@ -13,4 +13,8 @@ public class IsocelesRightTriangle extends RightTriangle {
     public Double getPerimeter() {
         return super.getPerimeter();
     }
+
+    public int numberOfSides() {
+        return super.numberOfSides();
+    }
 }

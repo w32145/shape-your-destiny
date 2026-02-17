@@ -13,4 +13,8 @@ public class Square extends Rectangle {
     public Double getPerimeter() {
         return super.getPerimeter();
     }
+
+    public int numberOfSides() {
+        return super.numberOfSides();
+    }
 }

@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RightTriangleTest {
-    Shape triangle = new RightTriangle(2.0, 6.0);
+    RightTriangle triangle = new RightTriangle(2.0, 6.0);
 
     @Test
     void areaTest() {
@@ -34,4 +34,9 @@ class RightTriangleTest {
         assertEquals(6.83, actual);
     }
 
+    @Test
+    void numberOfSidesTest() {
+        triangle = new RightTriangle(2.0, 6.0);
+        assertEquals(3, triangle.numberOfSides());
+    }
 }

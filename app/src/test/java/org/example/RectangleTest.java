@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RectangleTest {
-    Shape rectangle = new Rectangle(2.0,6.0);
+    Rectangle rectangle = new Rectangle(2.0,6.0);
 
   @Test
   void areaTest() {
@@ -32,5 +32,11 @@ class RectangleTest {
     rectangle = new Square(2.0);
     Double actual = Math.round(rectangle.getPerimeter() * 100.0) / 100.0;
     assertEquals(8.0, actual);
+  }
+
+  @Test
+  void numberOfSidesTest() {
+    rectangle = new Rectangle(2.0, 6.0);
+    assertEquals(4, rectangle.numberOfSides());
   }
 }
