@@ -19,4 +19,18 @@ class RectangleTest {
     Double actual = Math.round(rectangle.getPerimeter() * 100.0) / 100.0;
     assertEquals(16.0, actual);
   }
+
+  @Test
+  void squareAreaTest() {
+    rectangle = new Square(2.0);
+    Double actual = Math.round(rectangle.getArea() * 100.0) / 100.0;
+    assertEquals(4.0, actual);
+  }
+
+  @Test
+  void squarePerimeterTest() {
+    rectangle = new Square(2.0);
+    Double actual = Math.round(rectangle.getPerimeter() * 100.0) / 100.0;
+    assertEquals(8.0, actual);
+  }
 }

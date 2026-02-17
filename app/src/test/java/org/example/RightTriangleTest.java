@@ -22,14 +22,14 @@ class RightTriangleTest {
 
     @Test
     void isocelesAreaTest() {
-        triangle = new Isoceles(2.0);
+        triangle = new IsocelesRightTriangle(2.0);
         Double actual = Math.round(triangle.getArea() * 100.0) / 100.0;
         assertEquals(2.0, actual);
     }
 
     @Test
     void isocelesPerimeterTest() {
-        triangle = new Isoceles(2.0);
+        triangle = new IsocelesRightTriangle(2.0);
         Double actual = Math.round(triangle.getPerimeter() * 100.0) / 100.0;
         assertEquals(6.83, actual);
     }

@@ -1,8 +1,8 @@
 package org.example;
 
-public class Isoceles extends RightTriangle {
+public class IsocelesRightTriangle extends RightTriangle {
 
-    public Isoceles(Double length) {
+    public IsocelesRightTriangle(Double length) {
         super(length,length);
     }
 

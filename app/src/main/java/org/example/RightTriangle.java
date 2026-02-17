@@ -9,10 +9,6 @@ public class RightTriangle extends Shape {
         this.width = width;
     }
 
-    public RightTriangle(Double length) {
-        this.length = length;
-    }
-
     public Double getArea() {
         return 0.5 * length * width;
     }
